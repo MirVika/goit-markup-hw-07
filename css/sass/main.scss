@@ -1,9 +1,9 @@
 // utils styles
-@import url(css/sass/utils/_variables.scss);
-@import url(css/sass/utils/_v-hidden);
+@import '/css/sass/utils/variables';
+@import '/css/sass/utils/v-hidden';
 
 // base styles
-@import url(_base/_base.scss);
-@import url(_base/_reset.scss);
+@import '/css/sass/_base/base';
+@import '/css/sass/_base/reset';
 
 // components styles
