@@ -91,6 +91,13 @@ span {
 /* site nav */
 .header__logo {
   margin-right: 93px;
+  color: #2196f3;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
 }
 
 .main__nav {
@@ -100,6 +107,7 @@ span {
 
 .nav__list {
   display: flex;
+  
 }
 
 .nav__list .item+.item {
@@ -181,6 +189,8 @@ span {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+    margin-left: auto;
 }
 
 .contacts {
@@ -243,7 +253,7 @@ span {
 }
 
 /* section */
-.section-title {
+.section__heading {
   color: var(--title-text-color);
   font-family: 'Roboto';
   font-weight: 700;
@@ -315,7 +325,7 @@ span {
   gap: 30px;
 }
 
-.ben-list {
+.section__list {
   display: flex;
   align-items: center;
   width: 270px;
@@ -326,23 +336,23 @@ span {
   justify-content: center;
 }
 
-.benefit-icon {
+.section__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.benefits-list {
+.grid {
   display: flex;
   padding-left: 0px;
   gap: 30px;
 }
 
-.benefits-list .item + .item {
+.grid .grid__item + .grid__item {
   margin-left: 50;
 }
 
-.benefits-list .title {
+.grid .section__title {
   margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -364,13 +374,13 @@ span {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.benefits-list {
+.grid {
   list-style: none;
 
   margin-top: 0;
   margin-bottom: 0;
 }
-.benefits-list .text {
+.grid .section__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -381,34 +391,34 @@ span {
 
 /* what we do section */
 
-.section-title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.what-we-do {
+.section__whatwedo {
   padding-top: 0px;
 }
 
 .do-item {
   display: flex;
 }
-.picture + .picture {
+.grid__picture + .grid__picture {
   margin-left: 30px;
 }
-.picture {
+.grid__picture {
   position: relative;
   overflow: hidden;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.thumb > .label {
+.thumb > .grid_label {
   position: absolute;
   bottom: 0;
   left: 0;
   margin: 0;
   width: 100%;
 }
-.label {
+.grid_label {
   position: absolute;
   bottom: 0;
   display: flex;
